@@ -1,0 +1,14 @@
+{
+    "pageName": "fundementals",
+    "infoDump": "basics things about python like how to declare a var, acessing files, what even is python, why do i keep typoing it as pythong, etc",
+    "subHeaders":[
+	{
+	    "Title": "File opening",
+	    "infoDump": "to concatinate strings you can use +, eg: 'hello' + 'world' will produce 'hello world'. you can also use .join for example if you have a list of places=['Japan', 'UK', 'USA'] you can join them together seperated with a comma with places.join(', ') which would product 'Japan, UK, USA'"	    
+	},	
+	{
+	    "Title": "hoihoi",
+	    "infoDump" : "Dictionaries are made with hash tables which allow for some of the fastest lookups of data, on average an O(1) at worse O(n) making"
+	}
+    ]
+}
