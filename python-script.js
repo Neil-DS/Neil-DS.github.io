@@ -39,12 +39,10 @@ function clicked_anything(x){
 function populateHeader(jsonObj) {    
     const myH1 = document.createElement('h1');
     const myPara = document.createElement('p');
-
-   
+    
     myH1b.textContent = jsonObj['pageName'];
-    header.replaceChild(myH1b, myH1);
-	
+    header.appendChild(myH1b, myH1);	
     myParab.textContent = jsonObj['infoDump'];
-    header.replaceChild(myParab, myPara); 
+    header.appendChild(myParab, myPara); 
     
 }
