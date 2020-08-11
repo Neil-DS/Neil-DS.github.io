@@ -40,26 +40,11 @@ function populateHeader(jsonObj) {
     const myH1 = document.createElement('h1');
     const myPara = document.createElement('p');
 
-    const myH1b = document.createElement('h1');
-    const myParab = document.createElement('p');
-
-    mybool = header.hasChildNodes();
-    console.log('hey');
-    
-    if(mybool){	
-	myH1b.textContent = jsonObj['pageName'];
-	header.replaceChild(myH1b, myH1);
+   
+    myH1b.textContent = jsonObj['pageName'];
+    header.replaceChild(myH1b, myH1);
 	
-	myParab.textContent = jsonObj['infoDump'];
-	header.replaceChild(myParab, myPara);
-    }
-    else{	
-	myH1.textContent = jsonObj['pageName'];
-	header.appendChild(myH1);
-	
-	myPara.textContent = jsonObj['infoDump'];
-	header.appendChild(myPara);
-    }
-
+    myParab.textContent = jsonObj['infoDump'];
+    header.replaceChild(myParab, myPara); 
     
 }
