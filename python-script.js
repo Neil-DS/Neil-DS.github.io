@@ -26,7 +26,6 @@ function loadJSON(thisthing) {
 	populateHeader(superHeroes);
 	/*showHeroes(superHeroes);*/
     }
-
     
 }
 
@@ -38,11 +37,15 @@ function clicked_anything(x){
 
 function populateHeader(jsonObj) {    
     const myH1 = document.createElement('h1');
-    const myPara = document.createElement('p');
+    const myPara = document.createElement('p');    
+
+    console.log(myH1, myPara);
+
+    header.innerHTML = '';
     
-    myH1b.textContent = jsonObj['pageName'];
-    header.appendChild(myH1b, myH1);	
-    myParab.textContent = jsonObj['infoDump'];
-    header.appendChild(myParab, myPara); 
+    myH1.textContent = jsonObj['pageName'];
+    header.appendChild(myH1);	
+    myPara.textContent = jsonObj['infoDump'];
+    header.appendChild(myPara);
     
 }
