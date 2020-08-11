@@ -44,6 +44,7 @@ function populateHeader(jsonObj) {
     const myParab = document.createElement('p');
 
     mybool = header.hasChildNodes();
+    console.log(mybool);
     
     if(mybool){	
 	myH1b.textContent = jsonObj['pageName'];
