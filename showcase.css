@@ -1,0 +1,10 @@
+body{
+    font-family: "Courier New", Courier, monospace;
+    display: grid; 
+    grid-template-columns: auto 10em 1vw [main-content-start] auto [main-content-end] 1vw 10em auto;
+    grid-template-rows: 5vh 10vh 5vh 10vh auto 10vh 3vh;
+    background-color: white;
+    /*background-image: linear-gradient(#DEFEFD, white);*/
+    background-repeat: no-repeat;
+
+}
