@@ -11,21 +11,39 @@
       <p></p>
     </div> -->
 
+    <!--Should Probably not have my face as the first thing people see, content first or something else first can have an about me page
+      where my info can be gotten.-->
     <div class="header-content-container">
-      <img class="portrait" src="port3.jpg">
-      <h3>Hello</h3>
-      <p>you have found your way to the portfolio of Neil De Swart an aspiring game developer, currently based in Scotland, I specialize in real-time computer graphics rendering using Vulkan and OpenGL my main langauges are C/C++, and Python for scripting.
-      </p>      
+
+      <div class="text">
+	
+	<h3>Neil De Swart</h3>
+	<p>Junior Developer</p>
+	
+      </div>
+
+      <div class="images">
+	
+	<div class="each">
+	  <a href="https://www.github.com"><img src="icons/github.png"></a>
+	</div>
+
+	<div class="each">
+	  <a href="https://www.twitter.com"><img src="icons/twitter.png"></a>
+	</div>
+	
+	<div class="each">
+	  <a href="https://www.twitter.com"><img src="icons/linkedin.png"></a>
+	</div>
+
+	  
+      </div>
+      
     </div>
 
     <!--turn notes into the thing that loads pages in place with homepage, cv?, showcase(screenshots, and code snippets) -->
     <div class="left-content-container">
-      <h3>Links</h3>      
-      <ul>
-	<li><a href="index.html">Home</a></li>
-	<li><a href="showcase.html">Showcase</a></li>	
-	<li><a href="cv.pdf">C.V.</a></li>	
-      </ul>
+     
     </div>
 
     <div class="main-content-container">
@@ -37,26 +55,26 @@
 	
 	<div class="showcase-item">
 	  <h4>
-	    <a href="https://github.com/Neil-DS/Psychosis">Psychosis Defined</a>
+	    <a href="psychosis.html">Psychosis Defined</a>
 	  </h4>	  
 	  
 	  <div class="overlay">
-	    <img src="map.jpg" class="showcase-image">
+	    <img src="psychosis/images/psychosis_screen.jpg" class="showcase-image">
 	  </div>
 	  
 	  <p>
-	    2D game based on a risk of rain concept of creating as much havoc as posibble
+	    2D game for learning to program 
 	  </p>
 	  
 	</div>
 
 	<div class="showcase-item">
 	  <h4>
-	    <a href="https://github.com/Neil-DS/Psychosis">Assorted Python</a>
+	    <a href="https://github.com/Neil-DS/Assorted-Python">Assorted Python</a>
 	  </h4>	  
 	  
 	  <div class="overlay">
-	    <img src="snowflake.jpg" class="showcase-image">
+	    <img src="python/images/map.jpg" class="showcase-image">
 	  </div>
 	  
 	  <p>
@@ -72,7 +90,7 @@
 	  </h4>	 
 	  
 	  <div class="overlay">
-	    <img src="ray.jpg" class="showcase-image">
+	    <img src="calculator/images/screen_grab.png" class="showcase-image">
 	  </div>
 	  
 	  <p>
