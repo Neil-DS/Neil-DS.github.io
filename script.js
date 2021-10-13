@@ -1,5 +1,8 @@
 //$('hyperlinked_row_1').onclick = function(){clicked_table_row('hyperlinked_row_1')};
 
+var images = document.getElementsByClassName("hover-image-div");
+    
+
 function $(x) {return document.getElementById(x);}
 
 function clicked_table_row(x){
@@ -23,7 +26,21 @@ function toggle_gallery(x){
     popup.classList.toggle("show");
 
     console.log("Toggling gallery...");   
-}   
+}
+
+function toggle_gallery2(){    
+    var attribute = this.getAttribute("data-image-name");
+    var gallery_image = $("image-holder-id");
+    gallery_image.style.backgroundImage = attribute;    
+
+    toggle_gallery("nothing");
+}
+
+for(var i = 0; i < images.length; i++) {
+    images[i].addEventListener('click', toggle_gallery2, false);
+}
+
+    
 
 function do_nothing(e){
     if (!x) var x = window.event;
