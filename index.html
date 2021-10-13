@@ -17,8 +17,15 @@
     
   <body>
 
+    <div class="popup" id="main-gallery" onclick="toggle_gallery()">
+
+      <div class="image-holder" onclick="do_nothing()"> <!--need to stop event propagation for the inner div to not close the div-->
+      </div>
+
+    </div>
+
     
-    <div class="header-content-container">
+    <div class="header-content-container" >
 
       <div class="nav-bar">
 
@@ -49,9 +56,9 @@
 	  
 	</div>
 
-	<div class="nav-buttons">
+	<div class="nav-buttons" href="index.html">
 	  <div id="Home">
-	    <a href="index.html">HOME</a>
+	    HOME
 	  </div>
 	  <div id="Showcase">
 	    <a href="index.html">SHOWCASE</a>
@@ -68,7 +75,7 @@
     </div>
     
     <!--turn notes into the thing that loads pages in place with homepage, cv?, showcase(screenshots, and code snippets) -->
-    <div class="left-content-container">
+    <div class="left-content-container" >
      
     </div>
 
@@ -91,8 +98,8 @@
 	  </div>
 	  
 	  <p>
-	    Started as a hobby project during the 2020 pandemic to learn <b>Vulkan</b> and improve my <b>C++</b>, <b>WinApi</b>, and <b>Mathematic</b> skills.
-	    A top-down 2D rougelite, borrowing elements from building games like Terraria and Minecraft and rougelike elements from games like Shopkeeper
+	    Started as a hobby project during the 2020 pandemic to learn <b>Vulkan</b> and to improve my <b>C++</b>, <b>WinApi</b>, and <b>Mathematic</b> skills.
+	    The game is a top-down 2D rougelite, borrowing elements from building games like Terraria and Minecraft and rougelike elements from games like Shopkeeper
 	    and Risk Of Rain. game loop is to delve, fight new enemies, craft unique items, upgrade and customize your home base. 
 	  </p>
 	  
@@ -105,7 +112,7 @@
 	  </h4>	 
 	  
 	  <div class="overlay">
-	    <div class="hover-image-div"><img src="Cooking Innana/Light On.png" class="showcase-image"></div>
+	    <div class="hover-image-div" onclick="toggle_gallery()"><img src="Cooking Innana/Light On.png" class="showcase-image"></div>
 	    <div class="hover-image-div"><img src="Cooking Innana/multiple lights.png" class="showcase-image"></div>
 	  </div>
 	  
@@ -117,11 +124,11 @@
 
 	<div class="showcase-item">
 	  <h4>
-	    <a href="https://github.com/Neil-DS/Assorted-Python">Assorted Python</a>
+	    <a href="https://github.com/Neil-DS/Assorted-Python" >Assorted Python</a>
 	  </h4>	  
 	  
-	  <div class="overlay">
-	    <div  class="hover-image-div"><img src="python/images/ray.jpg" class="showcase-image"></div>	    
+	  <div class="overlay" >
+	    <div class="hover-image-div"><img src="python/images/ray.jpg" class="showcase-image"></div>	    
 	    <div class="hover-image-div"><img src="python/images/snowflake.jpg" class="showcase-image"></div>
 	    <div class="hover-image-div"><img src="python/images/map.jpg" class="showcase-image"></div>
 	    <div class="hover-image-div"><img src="python/images/ray.jpg" class="showcase-image"></div>
