@@ -1,6 +1,6 @@
-//------------- json loading
+$('load-psychosis').onclick = function(){get_json_link('load-psychosis')}
+$('load-cooking').onclick = function(){get_json_link('load-cooking')};
 
-$('load-psychosis').onclick = function(){get_json_link('load-psychosis')};
 $('Home').onclick = function(){get_json_link('Home')};
 
 const header = document.querySelector('header');
@@ -10,9 +10,8 @@ const section = document.querySelector('section');
 function get_json_link(x){
     let link_json = $(x).getAttribute("data-linker");	
     console.log(link_json);    
-    loadJSON(link_json);
+    loadJSON(link_json);   
 }
-
 
 function loadJSON(goto_url) {
     let requestURL = goto_url;
@@ -28,27 +27,22 @@ function loadJSON(goto_url) {
     }    
 }
 
-
+//
 function populateHeader(jsonObj) {    
-    const myH1 = document.createElement('h3');
-    const myPara = document.createElement('p');
-
-    console.log(myH1, myPara);    
+    const my_header = document.createElement('h3');  
     header.innerHTML = '';
     
-    myH1.textContent = jsonObj['PageHeader'];
-    header.appendChild(myH1);	
-    myPara.textContent = jsonObj['InfoDump'];
-    header.appendChild(myPara);
+    my_header.textContent = jsonObj['PageHeader'];
+    header.appendChild(my_header);	
 
-    var showcase_peice;
-    var bigboything = Object.keys(jsonObj['SubHeaders']).length;
-    for(var i = 0; i < bigboything; i++){
+    var showcase_peice = '';
+    var each_sub = Object.keys(jsonObj['SubHeaders']).length;
+    for(var i = 0; i < each_sub; i++){
 	showcase_peice += jsonObj['SubHeaders'][i].Title + jsonObj['SubHeaders'][i].InfoDump;
     }
     
     section.innerHTML = showcase_peice;
+    
     console.log(section);
 }
 
-//-------- -------------
