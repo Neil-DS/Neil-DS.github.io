@@ -49,6 +49,10 @@ function populateHeader(jsonObj) {
     $('load-cooking').onclick = function(){get_json_link('load-cooking')};
     $('load-assorted').onclick = function(){get_json_link('load-assorted')};
     $('load-tayside').onclick = function(){get_json_link('load-tayside')};
+
+    for(var i = 0; i < images.length; i++) {
+	images[i].addEventListener('click', set_gallery_image, false);
+    }
     
     console.log(section);
 }
