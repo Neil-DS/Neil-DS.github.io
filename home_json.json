@@ -8,7 +8,7 @@
 	},	
 	{
 	    "Title": "<div class='showcase-item'> <h4> <a href='https://github.com/Neil-DS/Assorted-Python' >Assorted Python</a> </h4>",
-	    "infoDump" : "<div class='overlay'> <div class='hover-image-div' data-image-name='python/images/ray.jpg'> <img src='python/images/ray.jpg' class='showcase-image'> </div> <div class='hover-image-div' data-image-name='python/images/snowflake.jpg'> <img src='python/images/snowflake.jpg' class='showcase-image'> </div> <div class='hover-image-div' data-image-name='python/images/map.jpg'> <img src='python/images/map.jpg' class='showcase-image'> </div> </div> <p>Quick applications made using Python. Ranging from testing out some ideas before implementing them in a larger project to handy tools I made to help me with other projects. </p> </div>"
+	    "InfoDump": "<div class='overlay'> <div class='hover-image-div' data-image-name='python/images/ray.jpg'> <img src='python/images/ray.jpg' class='showcase-image'> </div> <div class='hover-image-div' data-image-name='python/images/snowflake.jpg'> <img src='python/images/snowflake.jpg' class='showcase-image'> </div> <div class='hover-image-div' data-image-name='python/images/map.jpg'> <img src='python/images/map.jpg' class='showcase-image'> </div> </div> <p>Quick applications made using Python. Ranging from testing out some ideas before implementing them in a larger project to handy tools I made to help me with other projects. </p> </div>"
 	}
     ]
 }

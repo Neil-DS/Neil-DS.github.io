@@ -41,9 +41,13 @@ function populateHeader(jsonObj) {
     myPara.textContent = jsonObj['InfoDump'];
     header.appendChild(myPara);
 
-    const something = jsonObj['SubHeaders'][0].Title + jsonObj['SubHeaders'][0].InfoDump;
-    console.log("something", something);
-    section.innerHTML = something;
+    var showcase_peice;
+    var bigboything = Object.keys(jsonObj['SubHeaders']).length;
+    for(var i = 0; i < bigboything; i++){
+	showcase_peice += jsonObj['SubHeaders'][i].Title + jsonObj['SubHeaders'][i].InfoDump;
+    }
+    
+    section.innerHTML = showcase_peice;
     console.log(section);
 }
 
