@@ -1,13 +1,13 @@
 {
     "PageHeader": "Showcase",
-    "InfoDump": 'hey',
+    "InfoDump": "hey",
     "SubHeaders":[
 	{
-	    "Title": '<div class="showcase-item"> <h4> <div id="load-psychosis" data-linker="https://neil-ds.github.io/psychosis.json">Psychosis Defined</div> </h4> ' ,
-	    "InfoDump": '   <div class="overlay">
-	      <iframe width="100%" src="https://www.youtube.com/embed/HWmgzyGG6TU"
-		      title="YouTube video player" frameborder="0"
-		      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	   
+	    "Title": "<div class='showcase-item'> <h4> <div id='load-psychosis' data-linker='https://neil-ds.github.io/psychosis.json'>Psychosis Defined</div> </h4>",
+	    "InfoDump": " <div class='overlay'>
+	      <iframe width='100%' src='https://www.youtube.com/embed/HWmgzyGG6TU'
+		      title='YouTube video player' frameborder='0'
+		      allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>	   
 	    </div>
 	    
 	    <p>
@@ -18,37 +18,37 @@
 	    
 	  </div>
 
-	  <div class="showcase-item">
+	  <div class='showcase-item'>
 	    
 	    <h4>
-	      <a href="https://github.com/Neil-DS/Psychosis">Cooking Innana</a>
+	      <a href='https://github.com/Neil-DS/Psychosis'>Cooking Innana</a>
 	    </h4>	 
 	    
-	    <div class="overlay">
-	      <div class="hover-image-div" data-image-name="Cooking Innana/Light On.png"><img src="Cooking Innana/Light On.png" class="showcase-image"></div>
-	      <div class="hover-image-div" data-image-name="Cooking Innana/multiple lights.png"><img src="Cooking Innana/multiple lights.png" class="showcase-image"></div>
+	    <div class='overlay'>
+	      <div class='hover-image-div' data-image-name='Cooking Innana/Light On.png'><img src='Cooking Innana/Light On.png' class='showcase-image'></div>
+	      <div class='hover-image-div' data-image-name='Cooking Innana/multiple lights.png'><img src='Cooking Innana/multiple lights.png' class='showcase-image'></div>
 	    </div>
 	    
 	    <p>
 	      Made during the pandemic as a challenge to program every day for 100 days and this was the result, A 3D application that taught me a lot about graphics programming using open-gl and c++
 	    </p>
 	    
-</div>'	    
+</div> "    
 	},	
 	{
-	    "Title": ' <div class="showcase-item">
+	    "Title": " <div class='showcase-item'>
 	    <h4>
-	      <a href="https://github.com/Neil-DS/Assorted-Python" >Assorted Python</a>
-	    </h4>',
-	    "infoDump" : '<div class="overlay" >
-	      <div class="hover-image-div" data-image-name="python/images/ray.jpg">
-		<img src="python/images/ray.jpg" class="showcase-image">
+	      <a href='https://github.com/Neil-DS/Assorted-Python' >Assorted Python</a>
+	    </h4> ",
+	    "infoDump" : " <div class='overlay'>
+	      <div class='hover-image-div' data-image-name='python/images/ray.jpg'>
+		<img src='python/images/ray.jpg' class='showcase-image'>
 	      </div>	    
-	      <div class="hover-image-div" data-image-name="python/images/snowflake.jpg">
-		<img src="python/images/snowflake.jpg" class="showcase-image">
+	      <div class='hover-image-div' data-image-name='python/images/snowflake.jpg'>
+		<img src='python/images/snowflake.jpg' class='showcase-image'>
 	      </div>
-	      <div class="hover-image-div" data-image-name="python/images/map.jpg">
-		<img src="python/images/map.jpg" class="showcase-image">
+	      <div class='hover-image-div' data-image-name='python/images/map.jpg'>
+		<img src='python/images/map.jpg' class='showcase-image'>
 	      </div>	  
 	    </div>
 	    
@@ -57,7 +57,7 @@
 	      help me with other projects.
 	    </p>
 	    
-	  </div>'
+	  </div> "
 	}
     ]
 }
