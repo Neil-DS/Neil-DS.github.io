@@ -1,11 +1,12 @@
-$('load-psychosis').onclick = function(){get_json_link('load-psychosis')}
+$('load-psychosis').onclick = function(){get_json_link('load-psychosis')};
 $('load-cooking').onclick = function(){get_json_link('load-cooking')};
+$('load-assorted').onclick = function(){get_json_link('load-assorted')};
+$('load-tayside').onclick = function(){get_json_link('load-tayside')};
 
 $('Home').onclick = function(){get_json_link('Home')};
 
 const header = document.querySelector('header');
 const section = document.querySelector('section');
-
 
 function get_json_link(x){
     let link_json = $(x).getAttribute("data-linker");	
@@ -42,6 +43,12 @@ function populateHeader(jsonObj) {
     }
     
     section.innerHTML = showcase_peice;
+
+    //when the page is reloaded it invalidates any onclick javascript functions that belonged inside it and needs to be remade.
+    $('load-psychosis').onclick = function(){get_json_link('load-psychosis')};
+    $('load-cooking').onclick = function(){get_json_link('load-cooking')};
+    $('load-assorted').onclick = function(){get_json_link('load-assorted')};
+    $('load-tayside').onclick = function(){get_json_link('load-tayside')};
     
     console.log(section);
 }
