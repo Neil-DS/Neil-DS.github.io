@@ -2,16 +2,7 @@
 
 var images = document.getElementsByClassName("hover-image-div");
 
-
 function $(x) {return document.getElementById(x);}
-
-$('load-psychosis').onclick = function(){get_json_link('load-psychosis')};
-
-function get_json_link(x){
-    let link_json = $(x).getAttribute("data-linker");	
-    console.log(link_json);    
-    loadJSON(link_json);
-}    
 
 //toggles the css "show" class to hide or show the gallery div
 function toggle_gallery(x){    
