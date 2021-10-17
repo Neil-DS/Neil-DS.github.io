@@ -35,7 +35,6 @@ function populateHeader(jsonObj) {
 
     console.log(myH1, myPara);    
     header.innerHTML = '';
-    console.log(header.innerHTML, section);
     
     myH1.textContent = jsonObj['PageHeader'];
     header.appendChild(myH1);	
