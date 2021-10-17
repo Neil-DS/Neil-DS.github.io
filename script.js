@@ -1,16 +1,19 @@
 //$('hyperlinked_row_1').onclick = function(){clicked_table_row('hyperlinked_row_1')};
 
 var images = document.getElementsByClassName("hover-image-div");
-    
+
 
 function $(x) {return document.getElementById(x);}
 
-function clicked_table_row(x){
-    var link_urll = $(x);
-   
-    window.location = link_urll.getAttribute("data-linker");   
-}
+$('load-psychosis').onclick = function(){get_json_link('load-psychosis')};
 
+function get_json_link(x){
+    let link_json = $(x).getAttribute("data-linker");	
+    console.log(link_json);    
+    loadJSON(link_json);
+}    
+
+//toggles the css "show" class to hide or show the gallery div
 function toggle_gallery(x){    
     //var popup = $("psychosisDIV");    
     //popup.classList.toggle("show");
@@ -28,27 +31,29 @@ function toggle_gallery(x){
     console.log("Toggling gallery...");   
 }
 
-function toggle_gallery2(){    
+
+function set_gallery_image(){    
     var attribute = this.getAttribute("data-image-name");
-    var gallery_image = $("image-holder-id");
-    gallery_image.style.backgroundImage = attribute;    
+
+    //var gallery_image = $("image-holder-id");    
+    //gallery_image.style.backgroundImage = attribute;
+
+    $("inner-image-test").src = attribute;
 
     toggle_gallery("nothing");
 }
 
+//adds click listerns and assigns the function for when an image is clicked
 for(var i = 0; i < images.length; i++) {
-    images[i].addEventListener('click', toggle_gallery2, false);
+    images[i].addEventListener('click', set_gallery_image, false);
 }
-
     
-
+//stops the gallery from closing when the inner div is clicked by stopping javascripts propagation
 function do_nothing(e){
     if (!x) var x = window.event;
     x.cancelBubble = true;
     if (x.stopPropagation) x.stopPropagation();
 }
-    
-
 
 
 /*

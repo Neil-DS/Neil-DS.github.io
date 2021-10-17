@@ -3,27 +3,18 @@
   <head>
     <link rel="stylesheet" type="text/css" href="style.css">    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
-  
+  </head>  
 
-    <!--<div class="left-content-container">
-      <h1>Portfolio links</h1>
-      <p></p>
-    </div> -->
-
-    <!--header/intro
-      -->
-
-    
+  <!-- header/intro -->    
   <body>
 
     <div class="popup" id="main-gallery" onclick="toggle_gallery()">
 
-      <div class="image-holder" id="image-holder-id" onclick="do_nothing()"> <!--need to stop event propagation for the inner div to not close the div-->
+      <div class="image-holder" id="image-holder-id" onclick="do_nothing()">
+	<div class="gallery-cont"><img src="yaya.png" id="inner-image-test"></div>
       </div>
 
     </div>
-
     
     <div class="header-content-container" >
 
@@ -88,7 +79,7 @@
 	
 	<div class="showcase-item">
 	  <h4>
-	    <a href="psychosis.html">Psychosis Defined</a>
+	    <div id="load-psychosis" data-linker="https://neil-ds.github.io/psychosis.json">Psychosis Defined</div>
 	  </h4>	  
 	  
 	  <div class="overlay">
@@ -112,8 +103,8 @@
 	  </h4>	 
 	  
 	  <div class="overlay">
-	    <div class="hover-image-div" data-image-name="url('Cooking Innana/Light On.png')"><img src="Cooking Innana/Light On.png" class="showcase-image"></div>
-	    <div class="hover-image-div" data-image-name="url('Cooking Innana/multiple lights.png')"><img src="Cooking Innana/multiple lights.png" class="showcase-image"></div>
+	    <div class="hover-image-div" data-image-name="Cooking Innana/Light On.png"><img src="Cooking Innana/Light On.png" class="showcase-image"></div>
+	    <div class="hover-image-div" data-image-name="Cooking Innana/multiple lights.png"><img src="Cooking Innana/multiple lights.png" class="showcase-image"></div>
 	  </div>
 	  
 	  <p>
@@ -128,13 +119,13 @@
 	  </h4>	  
 	  
 	  <div class="overlay" >
-	    <div class="hover-image-div" data-image-name="url('python/images/ray.jpg')">
+	    <div class="hover-image-div" data-image-name="python/images/ray.jpg">
 	      <img src="python/images/ray.jpg" class="showcase-image">
 	    </div>	    
-	    <div class="hover-image-div" data-image-name="url('python/images/snowflake.jpg')">
+	    <div class="hover-image-div" data-image-name="python/images/snowflake.jpg">
 	      <img src="python/images/snowflake.jpg" class="showcase-image">
 	    </div>
-	    <div class="hover-image-div" data-image-name="url('python/images/map.jpg')">
+	    <div class="hover-image-div" data-image-name="python/images/map.jpg">
 	      <img src="python/images/map.jpg" class="showcase-image">
 	    </div>	  
 	  </div>
@@ -153,7 +144,7 @@
 	  </h4>	 
 	  
 	  <div class="overlay">
-	     <div class="hover-image-div" data-image-name="url('calculator/images/screen_grab.png')"><img src="calculator/images/screen_grab.png" class="showcase-image"></div>
+	     <div class="hover-image-div" data-image-name="calculator/images/screen_grab.png"><img src="calculator/images/screen_grab.png" class="showcase-image"></div>
 	  </div>
 	  
 	  <p>
