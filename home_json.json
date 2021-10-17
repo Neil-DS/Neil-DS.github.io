@@ -1,6 +1,6 @@
 {
     "PageHeader": "Showcase",
-    "InfoDump": "hey",
+    "InfoDump": "",
     "SubHeaders":[
 	{
 	    "Title": "<div class=\"showcase-item\"> <h4> <div id=\"load-psychosis\" data-linker=\"https://neil-ds.github.io/psychosis.json\">Psychosis Defined</div> </h4>",

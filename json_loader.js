@@ -40,7 +40,11 @@ function populateHeader(jsonObj) {
     header.appendChild(myH1);	
     myPara.textContent = jsonObj['InfoDump'];
     header.appendChild(myPara);
-    
+
+    const something = jsonObj['SubHeaders'][0].Title + jsonObj['SubHeaders'][0].InfoDump;
+    console.log("something", something);
+    section.innerHTML = something;
+    console.log(section);
 }
 
 //-------- -------------
