@@ -1,0 +1,74 @@
+/*
+  the css for the gallery that pops up to display images.
+*/
+.popup{
+    order: 7;
+
+    visibility: hidden;
+    
+    position: sticky;
+    left: 0;
+    top : 0;
+    
+    background-color: rgba(50, 50, 50 , .8);
+    grid-column: start / end;
+    grid-row: 1 / 5;
+
+    display: flex;
+    justify-content: center;
+
+    /*
+    display: grid;
+    grid-template-rows: 2vh auto 45% auto 2vh;
+    grid-template-columns:  auto 60% auto;    
+   */
+}
+
+/*
+I will want to maintain the images dimensions, lets go make a bunch of screen shots.
+*/
+.image-holder{    
+    position: sticky;
+
+    
+    max-width: 75%;    
+    max-height: 80vh;
+   
+    
+    top: 9%;
+
+    background-color: black;
+    
+    grid-column: 2 / 3;
+    grid-row: main-row-start / main-row-end;
+
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.gallery-cont{
+    background-color: black;
+    
+    right: 0;
+    
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 800px) {
+    .image-holder {
+	max-width: 100%;
+	min-width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+
+
+.gallery-cont img{
+    width: 100%;
+    height: 100%;
+}

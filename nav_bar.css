@@ -1,0 +1,91 @@
+/*
+  nav bar rules:
+  size of the entire window, but content is centered
+*/
+.nav-bar{    
+    min-width: 50vw;
+    max-width: 800px;    
+    
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;    
+
+    display: grid;
+    grid-template-columns: 75% 5% 20%;
+    grid-template-rows: 55% 10% 35%;
+}
+
+/*
+  split the nav bar into top and bottom for info and links
+*/
+.nav-seperator{
+    padding: -5px;
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    border-top: 1px solid black;
+}
+
+.nav-bottom{
+    
+    font-family: 'Times New Roman', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    margin: auto;    
+    grid-column: 1 / 4;
+    grid-row: 2/4;    
+}
+
+.nav-bottom div{    
+    margin: 0px 0px;
+    padding-right: 10px;
+    display: inline;
+}
+
+/*
+  text formatting
+*/
+.header-text{
+    padding: 0px 5px;
+    grid-column: 1 / 2;    
+    grid-row: 1 / 2;
+}
+
+.header-text h3{    
+    font-family: "Helvetica Bold", Helvetica, bold;
+    color: #4069AF;
+    display: inline;
+
+    font-size: 25px;    
+}
+
+.header-text p{
+    font-family: "Helvetica", Helvetica;
+    display: inline;
+}
+
+/*
+  makes sure the thumbnals are an appropiate size, and align to the right of the screen
+*/
+.social-media-thumbnail{
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+.social-media-thumbnail img{    
+    float: right;
+    padding: 6px 2px;
+    max-height: 20px;
+}
+
+.social-media-thumbnail img:hover{
+    opacity: 0.5;
+}
+
+
+@media screen and (max-width: 910px) {
+    .header-text p{	
+	visibility: hidden;
+    }
+    .nav-bar {
+	grid-template-columns: 60% 5% 35%;
+    }
+}
