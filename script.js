@@ -5,7 +5,7 @@ var images = document.getElementsByClassName("hover-image-div");
 function $(x) {return document.getElementById(x);}
 
 //toggles the css "show" class to hide or show the gallery div
-function toggle_gallery(x){    
+function toggle_gallery(){    
     //var popup = $("psychosisDIV");    
     //popup.classList.toggle("show");
 
@@ -22,6 +22,13 @@ function toggle_gallery(x){
     console.log("Toggling gallery...");   
 }
 
+function close_gallery(){
+    var popup = $("main-gallery");
+    popup.classList.toggle("show");
+    
+    $("inner-image-test").src = "";    
+}
+
 
 function set_gallery_image(){    
     var attribute = this.getAttribute("data-image-name");
@@ -31,7 +38,7 @@ function set_gallery_image(){
 
     $("inner-image-test").src = attribute;
 
-    toggle_gallery("nothing");
+    toggle_gallery();
 }
 
 //adds click listerns and assigns the function for when an image is clicked

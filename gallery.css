@@ -12,7 +12,7 @@
     
     background-color: rgba(50, 50, 50 , .8);
     grid-column: start / end;
-    grid-row: 1 / 5;
+    grid-row: 1 / row-end;
 
     display: flex;
     justify-content: center;
@@ -38,7 +38,6 @@ I will want to maintain the images dimensions, lets go make a bunch of screen sh
     top: 9%;
 
     background-color: black;
-    
     grid-column: 2 / 3;
     grid-row: main-row-start / main-row-end;
 
@@ -62,11 +61,15 @@ I will want to maintain the images dimensions, lets go make a bunch of screen sh
 
 @media screen and (max-width: 800px) {
     .image-holder {
+	top: 0;
 	max-width: 100%;
 	min-width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
-  }
-}
+    }
 
+    .popup{
+	
+    }
+}
 
 .gallery-cont img{
     width: 100%;
