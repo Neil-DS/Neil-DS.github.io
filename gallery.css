@@ -2,7 +2,7 @@
   the css for the gallery that pops up to display images.
 */
 .popup{
-    order: 7;
+    order: 10;
 
     visibility: hidden;
     

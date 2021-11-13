@@ -1,8 +1,9 @@
+/*
 $('load-psychosis').onclick = function(){get_json_link('load-psychosis')};
 $('load-cooking').onclick = function(){get_json_link('load-cooking')};
 $('load-assorted').onclick = function(){get_json_link('load-assorted')};
 $('load-tayside').onclick = function(){get_json_link('load-tayside')};
-
+*/
 $('Home').onclick = function(){get_json_link('Home')};
 
 const header = document.querySelector('header');

@@ -10,12 +10,6 @@
   <!-- -----------------------------------------NAV BAR--------------------------------------------- -->    
   <body>
     
-    <div class="popup" id="main-gallery" onclick="close_gallery()">
-      <div class="image-holder" id="image-holder-id" onclick="do_nothing()">
-	<div class="gallery-cont"><img src="" id="inner-image-test"></div>
-      </div>
-    </div>
-    
     <div class="header-content-container" >
       <div class="nav-bar">	
 	<div class="header-text">	  
@@ -55,109 +49,48 @@
     <!-- -----------------------------------------MAIN CONTENT--------------------------------------------- -->       
     <div class="main-content-container">           
       <div class="showcase-container">
-	<header>	  
-	  <h3>Showcase</h3>	  
+	<header>
+	  <h3>Psychosis</h3>
 	</header>	
 	
-	<section>	  
-	  <div class="showcase-item">
-	    <h4>
-	      <div id="load-psychosis" data-linker="https://neil-ds.github.io/psychosis.json"> Psychosis Defined </div>
-	    </h4>  
-	    
-	    <div class="overlay">
-	      <iframe width="100%" src="https://www.youtube.com/embed/HWmgzyGG6TU"
-		      title="YouTube video player" frameborder="0"
-		      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	   
-	    </div>
-	    
-	    <p>
-	      Started as a hobby project during the 2020 pandemic to learn <b>Vulkan</b> and to improve my <b>C++</b>, <b>WinApi</b>, and <b>Mathematic</b> skills. The game is a top-down 2D rougelite, borrowing elements from building games like Terraria and Minecraft and rougelike elements from games like Shopkeeper and Risk Of Rain. game loop is to delve, fight new enemies, craft unique items, upgrade and customize your home base. 
-	    </p>
-	    
-	  </div> <!--project summary-->
-
-	  <div class="showcase-item">	    
-	    <h4>
-	      <div id="load-cooking" data-linker="https://neil-ds.github.io/cooking.json"> Cooking Innana </div>
-	    </h4>	 
-	    	
-	    <div class="overlay">
-	      <div class="hover-image-div" data-image-name="Cooking Innana/Light On.png">
-		<img src="Cooking Innana/Light On.png" class="showcase-image"></div>
+	<section>
+	 
+	  <div style="background: #111111; overflow:auto;width:auto;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #cdcaa9; font-weight: bold">void</span> <span style="color: #ffffff">psychosis_defined::debug_LoadWorld(){</span>
+	      <span style="color: #ffffff">std::ifstream</span> <span style="color: #ffffff">myfile(</span><span style="color: #0086d2">&quot;data/world_layout.pdmap&quot;</span><span style="color: #ffffff">,</span> <span style="color: #ffffff">std::ios::binary</span> <span style="color: #ffffff">|</span> <span style="color: #ffffff">std::ios::ate);</span>
+	      <span style="color: #ffffff">std::streamsize</span> <span style="color: #ffffff">size</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">myfile.tellg();</span>
+	      <span style="color: #ffffff">myfile.seekg(</span><span style="color: #0086f7; font-weight: bold">0</span><span style="color: #ffffff">,</span> <span style="color: #ffffff">std::ios::beg);</span>
 	      
-	      <div class="hover-image-div" data-image-name="Cooking Innana/multiple lights.png">
-		<img src="Cooking Innana/multiple lights.png" class="showcase-image"></div>
+	      <span style="color: #ffffff">std::vector&lt;</span><span style="color: #cdcaa9; font-weight: bold">char</span><span style="color: #ffffff">&gt;</span> <span style="color: #ffffff">buffer(size);</span>
+		<span style="color: #fb660a; font-weight: bold">if</span><span style="color: #ffffff">(myfile.read(buffer.data(),</span> <span style="color: #ffffff">size)){</span>
+		    <span style="color: #ffffff">platform::LOGI(</span><span style="color: #0086d2">&quot;LOADING WORLD...&quot;</span><span style="color: #ffffff">,</span> <span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">);</span>
+		<span style="color: #ffffff">}</span><span style="color: #fb660a; font-weight: bold">else</span>
+<span style="color: #ffffff">platform::LOGE(</span><span style="color: #0086d2">&quot;READ WORLD FILE UNSUCCESFUL&quot;</span><span style="color: #ffffff">,</span> <span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">);</span>
+</pre></td></tr></table></div>
 
-	      <div class="hover-image-div" data-image-name="Cooking Innana/dino_behind.png">
-		<img src="Cooking Innana/dino_behind.png" class="showcase-image"></div>
-
-	      <div class="hover-image-div" data-image-name="Cooking Innana/panned_out.png">
-		<img src="Cooking Innana/panned_out.png" class="showcase-image"></div>
-	    </div>
-    
-	    <p>
-	      Made during the pandemic as a challenge to program every day for 100 days and this was the result, A 3D application that taught me a lot about graphics programming using open-gl and c++
-	    </p>	    
-	  </div>
-	  
-	  <div class="showcase-item">
-	    <h4>
-	      <div id="load-assorted" data-linker="https://neil-ds.github.io/assorted.json">Assorted Python</div>
-	    </h4>	  
-	    
-	    <div class="overlay">
-	      
-	      <div class="hover-image-div" data-image-name="python/images/ray.png">
-		<img src="python/images/ray.png" class="showcase-image">
-	      </div>
-
-	      <div class="hover-image-div" data-image-name="python/images/ray02.png">
-		<img src="python/images/ray02.png" class="showcase-image">
-	      </div>
-	      
-	      <div class="hover-image-div" data-image-name="python/images/map_builder01.png">
-		<img src="python/images/map_builder01.png" class="showcase-image">
-	      </div>
-
-	      <div class="hover-image-div" data-image-name="python/images/map_builder02.png">
-		<img src="python/images/map_builder02.png" class="showcase-image">
-	      </div>
-
-	      <div class="hover-image-div" data-image-name="python/images/map_builder03.png">
-		<img src="python/images/map_builder03.png" class="showcase-image">
-	      </div>
-	      
-	    </div>
-	    
-	    <p>
-	      Quick applications made using Python. Ranging from testing out some ideas before implementing them in a larger project to handy tools I made to
-	      help me with other projects.
-	    </p>	    
-	  </div>
-
-	  <div class="showcase-item">	    
-	    <h4>
-	      <div id="load-tayside" data-linker="https://neil-ds.github.io/tayside.json">Tayside Reusers</div>
-	    </h4>	 
-	    
-	    <div class="overlay">
-	      <div class="hover-image-div" data-image-name="calculator/images/screen_grab.png">
-		<img src="calculator/images/screen_grab.png" class="showcase-image">
-	      </div>
-	    </div>
-	    
-	    <p>
-	      A simple python application using tkinter to processing data for a reuse charity. The charity recycled old items and saved them from being discarded and kept track of their impact by estimating the amount of CO2 they were saving from being outputted into the atmosphere. The application takes a list of the items that were sold on that week and checks against a list to see if it's holds the information about the amount of CO2 that would be saved along with the items weight, and ID code.
-	    </p>	    
-	  </div>
 	</section> 	
       </div><!--showcase container-->      
     </div><!--main content container-->      
 
     
     <div class="right-content-container">      
-    </div>     
+    </div>
+
+        
+    <div class="popup" id="main-gallery" onclick="close_gallery()">
+      <div class="image-holder" id="image-holder-id" onclick="do_nothing()">
+	<div class="gallery-cont"><img src="" id="inner-image-test"></div>
+      </div>
+    </div>
+
     
   </body>
 
