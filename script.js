@@ -4,6 +4,8 @@ var images = document.getElementsByClassName("hover-image-div");
 
 function $(x) {return document.getElementById(x);}
 
+window.onbeforeunload = function() { return "This will Take you off of the site"; };
+
 //toggles the css "show" class to hide or show the gallery div
 function toggle_gallery(){    
     //var popup = $("psychosisDIV");    
