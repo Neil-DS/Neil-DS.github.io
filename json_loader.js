@@ -5,6 +5,7 @@ $('load-assorted').onclick = function(){get_json_link('load-assorted')};
 $('load-tayside').onclick = function(){get_json_link('load-tayside')};
 */
 $('Home').onclick = function(){get_json_link('Home')};
+$('Showcase').onclick = function(){get_json_link('Showcase')};
 
 const header = document.querySelector('header');
 const section = document.querySelector('section');
@@ -45,11 +46,13 @@ function populateHeader(jsonObj) {
     
     section.innerHTML = showcase_peice;
 
+    /*
     //when the page is reloaded it invalidates any onclick javascript functions that belonged inside it and needs to be remade.
     $('load-psychosis').onclick = function(){get_json_link('load-psychosis')};
     $('load-cooking').onclick = function(){get_json_link('load-cooking')};
     $('load-assorted').onclick = function(){get_json_link('load-assorted')};
     $('load-tayside').onclick = function(){get_json_link('load-tayside')};
+    */
 
     for(var i = 0; i < images.length; i++) {
 	images[i].addEventListener('click', set_gallery_image, false);

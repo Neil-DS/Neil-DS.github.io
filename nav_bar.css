@@ -2,6 +2,39 @@
   nav bar rules:
   size of the entire window, but content is centered
 */
+
+a.src-links {
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+div.header-content-container{
+    
+    background-color: white;
+    height: 3.5em;
+    padding: 5px 5px;
+
+    grid-column: start / end;
+    grid-row: 1 / 3;
+
+    /*border-bottom: 1px solid rgba(0, 0, 0, .3);*/
+    box-shadow: 0px 8px 3px -4px lightgrey;    
+
+    display: flex;
+    justify-content: center;
+    /*grid-template-columns: auto 60% auto;
+    grid-template-rows: 100%;*/  
+
+    position: sticky;
+    order: 10;
+    top: 0;
+}
+
 .nav-bar{    
     min-width: 50vw;
     max-width: 800px;    
@@ -25,7 +58,6 @@
 }
 
 .nav-bottom{
-    
     font-family: 'Times New Roman', sans-serif;
     font-size: 16px;
     text-decoration: none;
