@@ -1,10 +1,4 @@
 
-#under-construction{
-    background-color: yellow;
-    position: absolute;
-}
-
-
 /*
  
 
@@ -51,10 +45,6 @@ div.header-content-container{
     cursor: pointer;
 }
 
-pre{
-    
-}
-
 div.left-content-container{
     /*
     margin: 5px 5px;
@@ -97,33 +87,50 @@ div.main-content-container{
     background-color: white;    
 }
 
-.showcase-item{    
+.showcase-item-right{    
     margin: 0px 0px;
     float: right;
 
     min-height: 25vh;    
     min-width: 100%;
 
-    border-top: 1px solid #202020;
+    /*border-bottom: 1px solid #202020;*/
+}   
+
+.showcase-item-left{    
+    margin: 10px 0px;
+    float: left;
+
+    min-height: 25vh;    
+    width: 100%;
+
     /*border-bottom: 1px solid #202020;*/
 }   
 
 .hover-image-div{
-    display: inline; 
 }
 
 .hover-image-div:hover{
     opacity: 0.5;
 }
 
-div.overlay {
+div.overlay-right {
     float: right;
-    width: 30%;
+    width: 40%;
 }
 
-.overlay img{
-    width: 64px;
-    height: 64px;
+div.overlay-left {
+    padding: 0px 8px;
+    float: left;
+    width: 40%;
+}
+
+.overlay-right img{
+    width: 100%;
+}
+
+.overlay-left img{
+    width: 100%;
 }
 
 div.showcase-container{    
@@ -136,12 +143,16 @@ div.showcase-container{
     visibility: visible;
 } 
 
-.showcase-item p{
+.showcase-item-right p{
     padding: 0px 8px;
     max-width: 65%;
 }
 
-.showcase-container h4{
+.showcase-item-left p{
+    padding: 0px 8px;
+}
+
+.showcase-item-right h4{
     max-width: 50%;
     padding: 0px 5px;
 }
