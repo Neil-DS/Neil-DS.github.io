@@ -1,0 +1,37 @@
+
+.main-content-container{
+    /*margin: auto;*/
+
+    grid-column: start / end;
+    grid-row: main-row-start / row-end;
+
+    
+    display: flex;
+    justify-content: center;
+
+    /*
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 100%;
+    */    
+}
+
+
+.hover-image-div{
+}
+
+.hover-image-div:hover{
+    opacity: 0.5;
+}
+
+div.overlay {
+    float: right;
+    width: 40%;
+}
+
+.overlay img{
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+
+}

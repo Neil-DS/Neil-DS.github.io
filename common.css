@@ -1,0 +1,64 @@
+/*
+  better names
+*/
+:root{
+    --main-bg-color: white; /*fae5df;*/
+    --shadow-color: #FBEDEA;
+    --main-content-bg-ab: rgba(251, 237, 234, 0.5);
+    --small-important-pink: #f5cac2;
+    --big-important-pink: #ed7966;    
+    --small-contrast-blue: #303179;
+    --big-contrast-blue: #141850;
+    --normal-text-gray: #686868;
+    --main-black: #0d0d0d;
+}
+
+body{
+    margin: 0px 0px;
+    padding: 0px 0px;
+    font-family: "Calibri", Calibri;
+    display: grid; 
+    grid-template-columns: [start] auto 10em 1vw auto 1vw 10em auto [end];
+    /*want a start for the welcome*/
+    grid-template-rows: auto 4em 1.5vh [main-row-start] auto [main-row-end] 2vh 15em auto [row-end];
+    /*background-image: linear-gradient(#DEFEFD, white);*/
+    background-repeat: no-repeat;
+    color: var(--normal-text-gray);
+    background-color: var(--main-bg-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--big-important-pink);
+}
+
+h1, h2, h3, h4{
+    color: var(--big-important-pink);
+    
+}
+
+section{
+    box-shadow: 1px 1px 5px var(--shadow-color);  
+    background-color: var(--main-content-bg-ab);
+    max-width: 800px;
+}
+
+#Home, #Showcase, #About, #load-psychosis, #load-cooking, #load-assorted, #load-tayside{
+    cursor: pointer;
+}
+
+div.main-content-container{
+    /*margin: auto;*/
+    grid-column: start / end;
+    grid-row: main-row-start / row-end;
+    
+    display: flex;
+    justify-content: center;
+
+    /*
+      grid-template-columns: 20% 60% 20%;
+      grid-template-rows: 100%;
+    */
+    
+    background-color: var(--main-bg-color);    
+}

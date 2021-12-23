@@ -29,6 +29,14 @@ function close_gallery(){
     $("inner-image-test").src = "";    
 }
 
+//should be able to use this to reload/unload showcase
+window.history.pushState({page: 1}, "", "");
+window.onpopstate = function(event) {
+    if(event){
+        window.location.assign("https://www.google.com/");
+        // Code to handle back button or prevent from navigation
+    }
+}
 
 function set_gallery_image(){    
     var attribute = this.getAttribute("data-image-name");
