@@ -18,13 +18,6 @@
   
 
 */
-
-:root{
-    --friends: 32px;
-    --close-friends: 16px;
-    --best-friends: 8px;
-}
-
 .showcase-item-align-right{
     margin-top: var(--friends);
     float: right;
@@ -45,21 +38,29 @@
     /*border-bottom: 1px solid #202020;*/
 }   
 
-div.overlay-right {
+.image-align-right {
+    margin: 0px 0px;
+    padding: 0px var(--close-friends);
+    
     float: right;
-    width: 40%;
+    width: 55%;
 }
 
-div.overlay-left {
-    float: left;
-    width: 40%;
-}
-
-.overlay-right img{
+.image-align-right img{
+    margin: 0px 0px;
+    padding: 0px 0px;
     width: 100%;
 }
 
-.overlay-left img{
+div.image-align-left {
+    margin: 0px 0px;
+    padding: 0px var(--close-friends);
+				      
+    float: left;    
+    width: 55%;
+}
+
+.image-align-left img{
     width: 100%;
 }
 
@@ -67,17 +68,20 @@ div.overlay-left {
     visibility: visible;
 } 
 
-.showcase-item-right p{
+.showcase-item-align-right p{
     max-width: 65%;
 }
 
-.showcase-item-right h4{
+.showcase-item-align-right h4{
+    margin-bottom: var(--best-friends);
 }
 
-.showcase-item-left p{
+.showcase-item-align-left p{
+    margin: 0px 0px;
 }
 
 .showcase-item-align-left h4{
+    margin-bottom: var(--best-friends);
 }
 
 @media screen and (max-width: 800px) {

@@ -41,6 +41,14 @@ div.header-content-container{
     grid-template-rows: 55% 10% 35%;
 }
 
+.src-links {    
+    color: var(--small-contrast-blue);   
+}
+
+.highlighted-src {
+    color: var(--big-important-pink);
+}
+
 /*
   split the nav bar into top and bottom for info and links
 */

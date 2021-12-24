@@ -11,7 +11,18 @@
     --big-contrast-blue: #141850;
     --normal-text-gray: #686868;
     --main-black: #0d0d0d;
+
+    --friends: 32px;
+    --close-friends: 16px;
+    --best-friends: 8px;
 }
+
+
+a{
+    text-decoration: none;
+    color: var(--big-important-pink);    
+}
+
 
 body{
     margin: 0px 0px;
@@ -27,10 +38,6 @@ body{
     background-color: var(--main-bg-color);
 }
 
-a {
-    text-decoration: none;
-    color: var(--big-important-pink);
-}
 
 h1, h2, h3, h4{
     color: var(--big-important-pink);
