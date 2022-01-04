@@ -29,9 +29,10 @@ div.header-content-container{
     top: 0;
 }
 
-.nav-bar{    
+.nav-bar{
+    width: 100%;
     min-width: 50vw;
-    max-width: 800px;    
+    max-width: 50vw;    
     
     grid-column: 2 / 3;
     grid-row: 1 / 2;    
