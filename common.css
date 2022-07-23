@@ -1,16 +1,22 @@
 /*
-  better names
+ better names
 */
 :root{
-    --main-bg-color: white; /*fae5df;*/
-    --shadow-color: #FBEDEA;
-    --main-content-bg-ab: rgba(251, 237, 234, 0.5);
+    --main-bg-color: #02040f;/*fae5df;*/
+    --header-bg-color: #02040f;
+    --shadow-color: #02040f;
+    --main-content-bg-ab: #060B28;
     --small-important-pink: #f5cac2;
-    --big-important-pink: #ed7966;    
-    --small-contrast-blue: #303179;
-    --big-contrast-blue: #141850;
-    --normal-text-gray: #686868;
+    --big-important-pink: #E59500;    
+    --small-contrast-blue: #002642;
+    --big-contrast-blue: #840032;
+    --normal-text-gray: #E5DADA;
     --main-black: #0d0d0d;
+
+	--pallete-main-color: #02040f;
+	--pallete-text-color: #e5dada;
+	--pallete-highlight-color: #e59500;
+
 
     --friends: 32px;
     --close-friends: 16px;
@@ -35,19 +41,27 @@ body{
     /*background-image: linear-gradient(#DEFEFD, white);*/
     background-repeat: no-repeat;
     color: var(--normal-text-gray);
-    background-color: var(--main-bg-color);
+    background-color: var(--main-bg-color); 
 }
 
 
-h1, h2, h3, h4{
-    color: var(--big-important-pink);
-    
+h1{
+    color: var(--pallete-text-color); 
+    font-size: 1.5em;
+    text-align: center;
+}
+
+h2{
+	font-size: 1.2em;	
 }
 
 section{
     box-shadow: 1px 1px 5px var(--shadow-color);  
     background-color: var(--main-content-bg-ab);
     max-width: 800px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--pallete-text-color);
 }
 
 #Home, #Showcase, #About, #load-psychosis, #load-cooking, #load-assorted, #load-tayside{
