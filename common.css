@@ -46,7 +46,7 @@ body{
 
 
 h1{
-    color: var(--pallete-text-color); 
+    color: var(--pallete-highlight-color); 
     font-size: 1.5em;
     text-align: center;
 }
@@ -56,12 +56,15 @@ h2{
 }
 
 section{
-    box-shadow: 1px 1px 5px var(--shadow-color);  
-    background-color: var(--main-content-bg-ab);
+    box-shadow: 1px 1px 5px var(--pallete-text-color);  
+    background-color: var(--pallete-main-color);
     max-width: 800px;
+    min-width: 40%;
+    /*
     border-width: 2px;
     border-style: solid;
     border-color: var(--pallete-text-color);
+    */
 }
 
 #Home, #Showcase, #About, #load-psychosis, #load-cooking, #load-assorted, #load-tayside{
