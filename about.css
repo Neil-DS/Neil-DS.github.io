@@ -1,1 +1,36 @@
+.showcase-item-align-right{
+    margin-top: var(--friends);
+    float: right;
 
+    min-height: 25vh;    
+    min-width: 100%;
+
+    /*border-bottom: 1px solid #202020;*/
+}
+
+.about-me{
+    margin: 15px 0px;
+    padding: 0px var(--close-friends);
+    
+    float: left;
+    width: 20%;
+}
+.about-me img{
+    margin: 0px 0px;
+    padding: 0px 0px;
+    width: 100%;
+}
+
+.showcase-item-align-right p{
+    max-width: 65%;
+}
+
+.showcase-item-align-right h4{
+    margin-bottom: var(--best-friends);
+}
+
+@media screen and (max-width: 800px) {
+    div.showcase-container{
+	min-width: 100%;
+    }
+}
